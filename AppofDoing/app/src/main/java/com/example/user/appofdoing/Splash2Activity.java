@@ -1,27 +1,24 @@
 package com.example.user.appofdoing;
 
-import android.content.Intent;
-import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
 import android.widget.RelativeLayout;
 
 
-public class MainActivity extends FragmentActivity {
+public class Splash2Activity extends FragmentActivity {
 
+    RelativeLayout layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        Intent intent = new Intent(getApplicationContext(), SignInActivity.class);
-        startActivity(intent);
-
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setContentView(R.layout.activity_splash2);
+        layout = (RelativeLayout)findViewById(R.id.splash2);
+        layout.setBackgroundResource(R.drawable.signin);
 
     }
 
