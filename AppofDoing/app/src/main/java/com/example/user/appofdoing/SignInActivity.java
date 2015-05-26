@@ -18,8 +18,6 @@ public class SignInActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_signin);
-        layout = (RelativeLayout)findViewById(R.id.splash1);
-        layout.setBackgroundResource(R.drawable.signin);
 
     }
 
