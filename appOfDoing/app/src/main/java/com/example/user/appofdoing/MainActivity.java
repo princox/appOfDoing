@@ -1,33 +1,45 @@
 package com.example.user.appofdoing;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
 import android.content.Intent;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.Window;
-import android.widget.RelativeLayout;
+
+import com.example.user.appofdoing.category.CategoryActivity;
+
+import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
 
+    private SectionPagerAdapter mSectionPagerAdapter;
+    private ViewPager mViewPager;
+    private ArrayList<BaseFragment> mFragments;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent intent = new Intent(getApplicationContext(), Splash1Activity.class);
+        Intent intent = new Intent(MainActivity.this, CategoryActivity.class);
         startActivity(intent);
 
+        initialFragment();
+        mSectionPagerAdapter = new SectionPagerAdapter(getSupportFragmentManager(), mFragments);
 
+        mViewPager = (ViewPager)findViewById(R.id.viewPager);
+        mViewPager.setAdapter(mSectionPagerAdapter);
     }
 
+    private void initialFragment(){
+        mFragments = new ArrayList<BaseFragment>();
+
+        mFragments.add(MainListFragment.newInstance());
+        mFragments.add(MainListFragment.newInstance());
+        mFragments.add(MainListFragment.newInstance());
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

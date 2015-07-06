@@ -12,12 +12,10 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
-        <activity android:name=".Splash1Activity" />
-        <activity android:name=".Splash2Activity" />
-        <activity android:name=".Splash3Activity" />
         <activity
             android:name=".SplashActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Splash" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,6 +29,10 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".category.CategoryActivity"
+            android:label="@string/title_activity_categort" >
         </activity>
     </application>
 

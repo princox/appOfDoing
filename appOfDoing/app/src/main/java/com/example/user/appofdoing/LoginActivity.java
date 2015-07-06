@@ -1,18 +1,54 @@
 package com.example.user.appofdoing;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+
+import com.example.user.appofdoing.category.CategoryActivity;
 
 
 public class LoginActivity extends AppCompatActivity {
+
+    private ImageButton googleLoginBtn, facebookLoginBtn, twitterLoginBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        googleLoginBtn = (ImageButton) findViewById(R.id.googleLoginButton);
+        googleLoginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        facebookLoginBtn = (ImageButton) findViewById(R.id.facebookLoginButton);
+        facebookLoginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, CategoryActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        twitterLoginBtn = (ImageButton) findViewById(R.id.twitterLoginButton);
+        twitterLoginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, CategoryActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     @Override

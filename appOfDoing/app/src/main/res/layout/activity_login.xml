@@ -2,38 +2,8 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/intro2"
+                android:background="@drawable/login"
                 tools:context="com.example.user.appofdoing.LoginActivity">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:paddingBottom="220dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/sentence03"
-        />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:paddingBottom="150dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/sentence04"
-        />
-
-    <ImageView
-        android:id="@+id/arrow3"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:paddingTop="100dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/arrow3"
-        />
 
     <LinearLayout
         android:id="@+id/buttonLayout"
@@ -45,7 +15,7 @@
         >
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/googleLoginButton"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -55,7 +25,7 @@
             android:src="@drawable/google"/>
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/facebookLoginButton"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -65,7 +35,7 @@
             android:src="@drawable/facebook"/>
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/twitterLoginButton"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

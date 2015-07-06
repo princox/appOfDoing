@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
 
 import com.example.user.appofdoing.intropage.IntroActivity;
 
@@ -15,7 +16,10 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //requestWindowFeature(Window.FEATURE_NO_TITLE);  //테마에서 해준다.
+
         setContentView(R.layout.activity_splash);
+
 
         new Handler().postDelayed(new Runnable() {
             @Override
