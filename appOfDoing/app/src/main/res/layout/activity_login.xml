@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/intro2"
+                tools:context="com.example.user.appofdoing.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="220dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/sentence03"
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="150dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/sentence04"
+        />
+
+    <ImageView
+        android:id="@+id/arrow3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingTop="100dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/arrow3"
+        />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingTop="350dp"
+        >
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/google"/>
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/facebook"/>
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/twitter"/>
+    </LinearLayout>
+
+</RelativeLayout>

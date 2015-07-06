@@ -2,10 +2,10 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "22.0.1"
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "com.hansung.appofdoing"
+        applicationId "com.example.user.appofdoing"
         minSdkVersion 15
         targetSdkVersion 21
         versionCode 1
