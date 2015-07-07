@@ -34,6 +34,10 @@
             android:name=".category.CategoryActivity"
             android:label="@string/title_activity_categort" >
         </activity>
+        <activity
+            android:name=".detailpage.DetailPagerActivity"
+            android:label="@string/title_activity_detail_page" >
+        </activity>
     </application>
 
 </manifest>

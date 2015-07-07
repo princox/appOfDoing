@@ -116,7 +116,7 @@ public class CategoryContestFragment extends BaseFragment {
             public void onClick(View v) {
                 if(selected[5]) {
                     foodstoreIV.setImageResource(R.drawable.foodstore);
-                    selected[5] = true;
+                    selected[5] = false;
                 }else{
                     foodstoreIV.setImageResource(R.drawable.foodstore2);
                     selected[5] = true;

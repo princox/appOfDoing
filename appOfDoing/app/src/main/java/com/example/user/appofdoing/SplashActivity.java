@@ -28,9 +28,9 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
 
-                overridePendingTransition(0, 0);
+                overridePendingTransition(0, 0);  //액티비티 전환효과
             }
-        }, 500);
+        }, 1000);
     }
 
     @Override
