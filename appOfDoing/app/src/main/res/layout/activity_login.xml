@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/login"
+                tools:context="com.example.user.appofdoing.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingTop="350dp"
+        >
+
+        <ImageButton
+            android:id="@+id/googleLoginButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/google"/>
+
+        <ImageButton
+            android:id="@+id/facebookLoginButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/facebook"/>
+
+        <ImageButton
+            android:id="@+id/twitterLoginButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/twitter"/>
+    </LinearLayout>
+
+</RelativeLayout>

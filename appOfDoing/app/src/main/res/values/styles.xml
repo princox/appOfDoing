@@ -5,4 +5,18 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="colorPrimary">@color/md_yellow_100</item>
+        <item name="colorPrimaryDark">@color/md_yellow_300</item>
+        <item name="colorAccent">@color/md_blue_500</item>
+    </style>
+
+    <style name="AppTheme.Splash" parent="AppTheme.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+
 </resources>

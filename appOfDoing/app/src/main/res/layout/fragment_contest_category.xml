@@ -1,0 +1,84 @@
+<RelativeLayout
+    android:id="@+id/contest_category"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/programming"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/programming"/>
+
+            <ImageView
+                android:id="@+id/service_planning"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/service_planning"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/sport"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/sport"/>
+
+            <ImageView
+                android:id="@+id/voluntary_service"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/voluntary_service"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/travel"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/travel"/>
+
+            <ImageView
+                android:id="@+id/foodstore"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/foodstore"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
